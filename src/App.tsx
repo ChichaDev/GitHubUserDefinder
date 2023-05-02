@@ -8,7 +8,7 @@ import { GithubError, GithubUser, LocalGithubUser } from "./types";
 import { extractLocalUser } from "./utils/extract-local-user";
 import { isGithubUser } from "./utils/typeguard";
 
-const BASE_URL = "http://api.github.com/users/"
+const BASE_URL = "https://api.github.com/users/"
 
 function App() {
   const [user, setUser] = useState<LocalGithubUser | null>(defaultUser)
